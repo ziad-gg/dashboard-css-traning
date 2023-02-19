@@ -66,8 +66,9 @@ header .settings {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    margin-right: 50px;
+    height: 50px;
+    width: 171px;
+    margin-right: -17px;
     position: relative;
 }
 header .settings .image {
@@ -75,12 +76,32 @@ header .settings .image {
     height: 30px;
     width: 27px;
 }
+header .settings .menu {
+    display: none;
+    background-color: var(--bs-border-color);
+    width: max-content;
+    height: max-content;
+}
 header .settings .username {
     padding-left: 10px;
     font-size: 20px;
     font-weight: 600;
     color: #173253;
     cursor: pointer;
+}
+header .settings:hover {
+ background-color:  #4a78b0;;
+}
+header .settings .menu .fa-user {
+    padding-left: 19px;
+    padding-right: 10px;
+}
+header .settings:hover .menu
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 171px;
 }
 header .settings::before {
     content: "";
